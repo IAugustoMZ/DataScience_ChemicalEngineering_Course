@@ -1,0 +1,10 @@
+services:
+  ds_chem_eng:
+    image: ds_chem_eng:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ds_chem_eng-container
+    volumes:
+      - E:\LocalPortfolio\PersonalProjects\DataScience_ChemicalEngineering_Course\:/ds_chemeng_course
+    command: ["tail", "-f", "/dev/null"]
